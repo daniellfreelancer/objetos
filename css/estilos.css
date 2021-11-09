@@ -1,0 +1,153 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/mosaicoBody.png);
+}
+
+div .titulo-contenido {
+  background-color: rgba(255, 155, 133, 0.45);
+  text-align: center;
+  padding: 5px;
+}
+
+.logo-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.logo-container .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: logo 4s linear infinite;
+          animation: logo 4s linear infinite;
+}
+
+.logo-container .logo img {
+  width: 100%;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 451px) {
+  .logo-container {
+    display: none;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header nav div a .titulo-web {
+  font-size: 45px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header nav div ul .boton-menu {
+  padding: 0px 10px;
+  background-color: #60d394ff;
+  margin: 10px 10px;
+  border-radius: 5px;
+  width: auto;
+  text-align: center;
+}
+
+.header nav div ul .boton-menu:hover {
+  background-color: #ff9b85ff;
+}
+
+.header nav a .img-menu {
+  width: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+.header nav a .img-menu:hover {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+main .calculo-envio {
+  background-color: rgba(169, 246, 131, 0.45);
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}

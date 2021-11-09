@@ -1,0 +1,110 @@
+
+// Paleta "colores solidos"
+$s-opal: #ee6055ff;
+$s-aquamarine: #60d394ff;
+$s-green: #aaf683ff;
+$s-crayola:#ffd97dff;
+$s-tangerine: #ff9b85ff;
+
+// Paleta "colores transparentes"
+$t-opal: rgba(238, 95, 85, 0.350);
+$t-aquamarine: rgba(96, 211, 148, 0.450);
+$t-green: rgba(169, 246, 131, 0.450);
+$t-crayola:rgba(255, 216, 125, 0.450);
+$t-tangerine: rgba(255, 155, 133, 0.450);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/mosaicoBody.png);
+}
+
+div {
+    .titulo-contenido {
+        background-color: $t-tangerine;
+        text-align: center;
+        padding: 5px;
+    }
+
+}
+// logo animado
+.logo-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;        
+        animation: logo 4s linear infinite;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform:  translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform:  translate(-50%, -50%) rotate(360deg);
+    }    
+}
+
+@media (max-width: 451px) {
+    .logo-container {
+        display: none;
+    }
+}
+
+// Header
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    nav {
+        div {
+            a {
+                .titulo-web {
+                    font-size: 45px;  
+                    font-family: 'Ubuntu', sans-serif;
+                }
+            }
+            ul {
+                .boton-menu{
+                    padding: 0px 10px;
+                    background-color: #60d394ff;
+                    margin: 10px 10px;
+                    border-radius: 5px;
+                    width: auto;
+                    text-align:center;
+                }
+                .boton-menu:hover {
+                    background-color: #ff9b85ff;
+                }        
+            } 
+        }
+        a .img-menu {
+            width: 40px;
+            align-items:center;
+            margin: 5px;
+        
+        }
+        a .img-menu:hover {
+            transform: scale(0.7);
+        }
+    }
+}
+
+main {
+    .calculo-envio {
+        background-color: $t-green;
+        text-align: center;
+    }
+}
